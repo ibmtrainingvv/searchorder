@@ -1,5 +1,11 @@
 package com.ibm.searchorder;
 
-public class SearchOrderApplication {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
+public class SearchOrderApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(SearchOrderApplication.class, args);
+	}
 }
