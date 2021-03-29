@@ -13,11 +13,23 @@ public class OrderSearchController {
 	@Autowired
 	OrderService orderService;
 
+	/**
+	 * Method to get order details with given id
+	 * 
+	 * @param orderID
+	 * @return
+	 */
+
 	@GetMapping("/order/{id}")
 	Optional<Order> getOrder(@PathVariable("id") String orderID) {
 		return orderService.getOrder(orderID);
 	}
 
+	/**
+	 * Method to get all orders details
+	 * 
+	 * @return
+	 */
 	@GetMapping("/order/")
 	List<Order> getOrders() {
 		return orderService.getOrders();
