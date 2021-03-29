@@ -14,7 +14,7 @@ public class OrderSearchController {
 	OrderService orderService;
 
 	/**
-	 * Method to get order details with given id
+	 * Method to get order details with given id for approval
 	 * 
 	 * @param orderID
 	 * @return
