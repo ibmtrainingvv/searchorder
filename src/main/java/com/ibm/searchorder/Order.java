@@ -12,7 +12,7 @@ public class Order {
 	@NotNull
 	private float price;
 	@Id
-	private String id; // TODO GENRATED BY DB AS PK
+	private String id;
 
 	public String getItem() {
 		return item;
